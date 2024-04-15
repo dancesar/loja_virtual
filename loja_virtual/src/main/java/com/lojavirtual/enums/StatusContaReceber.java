@@ -7,10 +7,12 @@ import lombok.ToString;
 @AllArgsConstructor
 @Getter
 @ToString
-public enum TipoEndereco {
+public enum StatusContaReceber {
 
-    COBRANCA("Cobranca"),
-    ENTREGA("Entrega");
+    COBRANCA("Pagar"),
+    VENCIDA("Vencida"),
+    ABERTA("Aberta"),
+    QUITADA("Quitada");
 
     private String descricao;
 }
